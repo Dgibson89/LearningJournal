@@ -72,6 +72,7 @@ body {
   background-color: var(--color-secondary);
   background-size: cover;
   color: var(--color-white);
+  text-shadow: 2px 2px var(--color-primary);
   padding-top: 40%;
   grid-area: hero;
 }
