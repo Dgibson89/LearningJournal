@@ -53,23 +53,26 @@ body {
   padding-top: 1em;
   text-align: center;
 }
+.title a {
+  text-decoration: none;
+}
 
 .home-cont {
   display: grid;
   grid-template-columns: 100px 100px 100px 100px;
   grid-template-rows: 300px 300px 300px 300px;
   grid-template-areas: "hero hero . ." "blog1 blog1 . ." "blog2 blog2 . ." "blog3 blog3 . .";
-  gap: 2em;
+  gap: 2.2em;
 }
 
 .hero {
-  width: 25.875rem;
+  width: 26.675rem;
   height: 18.31rem;
   background-image: url("/img/hero.jpg");
   background-color: var(--color-secondary);
   background-size: cover;
   color: var(--color-white);
-  padding-top: 50%;
+  padding-top: 40%;
   grid-area: hero;
 }
 .hero .date {
@@ -79,6 +82,7 @@ body {
 .hero .hero-title {
   margin-left: 0.5em;
   font-size: var(--br-lg-2);
+  padding-bottom: 0.5em;
 }
 .hero .hero-article {
   margin-left: 1em;

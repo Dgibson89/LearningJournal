@@ -53,6 +53,9 @@ body {
     padding-top: 1em;
     text-align: center;
   }
+  a {
+    text-decoration: none;
+  }
 }
 
 .home-cont {
@@ -64,17 +67,17 @@ body {
     "blog1 blog1 . ."
     "blog2 blog2 . ."
     "blog3 blog3 . .";
-  gap: 2em;
+  gap: 2.2em;
 }
 
 .hero {
-  width: 25.875rem;
+  width: 26.675rem;
   height: 18.31rem;
   background-image: url("/img/hero.jpg");
   background-color: var(--color-secondary);
   background-size: cover;
   color: var(--color-white);
-  padding-top: 50%;
+  padding-top: 40%;
   grid-area: hero;
   .date {
     margin-left: 1em;
@@ -83,9 +86,11 @@ body {
   .hero-title {
     margin-left: 0.5em;
     font-size: var(--br-lg-2);
+    padding-bottom: 0.5em;
   }
   .hero-article {
     margin-left: 1em;
+
     font-size: var(--br-sm-2);
   }
 }
