@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
 :root {
   --color-primary: #191d2b;
   --color-secondary: #ae2727;
@@ -15,28 +20,51 @@
   --color-grey-4: #454e56;
   --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
-  --br-sm-2: 14px;
+  --br-lg-1: 1.5rem;
+  --br-lg-2: 2rem;
+  --br-sm-1: 0.885rem;
+  --br-sm-2: 1rem;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode {
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 .title {
   display: flex;
-
+  justify-content: space-between;
+  width: 25.875rem;
+  font-size: var(--br-sm-1);
+  background-color: var(--color-white);
+  color: var(--color-black);
+  button {
+    border: none;
+    background-color: var(--color-white);
+    cursor: pointer;
+  }
+  .title-text {
+    padding: 1em;
+    font-weight: bold;
+  }
+  .title-link {
+    padding-top: 1em;
+    text-align: center;
+  }
 }
 
 .home-cont {
-display: grid;
-grid-template-columns: 100px 100px 100px 100px;
-grid-template-rows: 300px 300px 300px 300px;
-grid-template-areas:
-"hero hero . ." 
-"blog1 blog1 . ."
-"blog2 blog2 . ."
-"blog3 blog3 . .";
-gap: 2em;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 300px 300px 300px 300px;
+  grid-template-areas:
+    "hero hero . ."
+    "blog1 blog1 . ."
+    "blog2 blog2 . ."
+    "blog3 blog3 . .";
+  gap: 2em;
 }
-
-
 
 .hero {
   width: 25.875rem;
@@ -47,6 +75,18 @@ gap: 2em;
   color: var(--color-white);
   padding-top: 50%;
   grid-area: hero;
+  .date {
+    margin-left: 1em;
+    font-size: var(--br-sm-1);
+  }
+  .hero-title {
+    margin-left: 0.5em;
+    font-size: var(--br-lg-2);
+  }
+  .hero-article {
+    margin-left: 1em;
+    font-size: var(--br-sm-2);
+  }
 }
 
 .blog1 {
@@ -54,23 +94,29 @@ gap: 2em;
   height: 20.31rem;
   margin: 1em 0;
   grid-area: blog1;
+  margin: 0 0.5em;
   .blogimg {
-    width: 100%;
+    width: 95%;
     height: 200px;
   }
   .date {
     margin-left: 1em;
+    font-size: var(--br-sm-1);
+    background-color: var(--color-white);
+    color: var(--color-black);
   }
   .blog-title {
     margin-left: 0.5em;
+    font-size: var(--br-lg-1);
+    background-color: var(--color-white);
+    color: var(--color-black);
   }
   .blog-article {
+    background-color: var(--color-white);
+    color: var(--color-black);
     margin-left: 0.5em;
+    font-size: var(--br-sm-2);
   }
-}
-
-.footer {
-  text-align: center;
 }
 
 .blog2 {
@@ -78,18 +124,30 @@ gap: 2em;
   height: 20.31rem;
   margin: 1em 0;
   grid-area: blog2;
+  margin: 0 0.5em;
+  background-color: var(--color-white);
+  color: var(--color-black);
   .blogimg {
-    width: 100%;
+    width: 95%;
     height: 200px;
   }
   .date {
     margin-left: 1em;
+    font-size: var(--br-sm-1);
+    background-color: var(--color-white);
+    color: var(--color-black);
   }
   .blog-title {
     margin-left: 0.5em;
+    font-size: var(--br-lg-1);
+    background-color: var(--color-white);
+    color: var(--color-black);
   }
   .blog-article {
     margin-left: 0.5em;
+    font-size: var(--br-sm-2);
+    background-color: var(--color-white);
+    color: var(--color-black);
   }
 }
 
@@ -98,27 +156,37 @@ gap: 2em;
   height: 20.31rem;
   margin: 1em 0;
   grid-area: blog3;
+  background-color: var(--color-white);
+  color: var(--color-black);
   .blogimg {
-    width: 100%;
+    width: 95%;
     height: 200px;
+    margin: 0 0.5em;
   }
   .date {
     margin-left: 1em;
+    font-size: var(--br-sm-1);
+    background-color: var(--color-white);
+    color: var(--color-black);
   }
   .blog-title {
     margin-left: 0.5em;
+    font-size: var(--br-lg-1);
+    background-color: var(--color-white);
+    color: var(--color-black);
   }
   .blog-article {
     margin-left: 0.5em;
+    font-size: var(--br-sm-2);
+    background-color: var(--color-white);
+    color: var(--color-black);
   }
 }
-
-.footer {
-  text-align: center;
-}
-
 
 .footer {
   margin-top: 50px;
   padding-bottom: 10px;
+  text-align: center;
+  background-color: var(--color-white);
+  color: var(--color-black);
 }
