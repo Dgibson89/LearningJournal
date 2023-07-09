@@ -169,7 +169,7 @@ body {
   width: 25.875rem;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (max-width: 1700px) and (min-width: 769px) {
   .home-cont {
     display: grid;
     grid-template-columns: 400px 400px 400px 300px;
@@ -212,6 +212,55 @@ body {
   }
   .footer {
     width: 1200px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 2400px) and (min-width: 1701px) {
+  .home-cont {
+    display: grid;
+    grid-template-columns: 450px 450px 450px 450px;
+    grid-template-rows: 600px 300px 300px 0;
+    grid-template-areas: "hero hero hero hero" "blog1 blog1 blog2 blog2" "blog5 blog3 blog3 blog8" ". . . .";
+    gap: 2.2em;
+  }
+  .hero {
+    grid-area: hero;
+    width: auto;
+    height: auto;
+    padding: 18em 0 0 0;
+  }
+  .hero .date {
+    margin-left: 1em;
+    font-size: var(--br-sm-2);
+  }
+  .hero .hero-title {
+    margin-left: 0.5em;
+    font-size: var(--br-lg-2);
+    padding-bottom: 0.5em;
+  }
+  .hero .hero-article {
+    margin-left: 0.6em;
+    font-size: var(--br-lg-1);
+    width: 50%;
+  }
+  .blog1 {
+    grid-area: blog1;
+    width: auto;
+  }
+  .blog1 .blogimg {
+    background-size: cover;
+  }
+  .blog2 {
+    grid-area: blog2;
+    width: auto;
+  }
+  .blog3 {
+    grid-area: blog3;
+    width: auto;
+    margin: 0 0.5em;
+  }
+  .footer {
+    width: 1800px;
     text-align: center;
   }
 }/*# sourceMappingURL=styles.css.map */
