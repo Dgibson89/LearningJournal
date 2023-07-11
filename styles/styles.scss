@@ -235,13 +235,13 @@ body {
   .home-cont {
     display: grid;
     grid-template-columns: 450px 450px 450px 450px;
-    grid-template-rows: 600px 300px 300px 0;
+    grid-template-rows: 300px 300px 300px 0;
     grid-template-areas:
-      "hero hero hero hero"
-      "blog1 blog1 blog2 blog2"
-      "blog5 blog3 blog3 blog8"
+      "hero hero hero blog1"
+      "hero hero hero blog2"
+      "blog3 blog4 blog5 ."
       ". . . .";
-    gap: 2.2em;
+    gap: 1.5em;
   }
 
   .hero {
